@@ -26,7 +26,8 @@ class WelcomeScreen extends StatelessWidget {
                     color: Theme.of(context).textTheme.bodyText1?.color),
               ),
               ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Theme.of(context).primaryColor),
                 onPressed: () {
                   Navigator.push(
                       context, MaterialPageRoute(builder: (context) => Chat()));
